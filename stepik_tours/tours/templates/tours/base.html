@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<!-- index.html source code: http://www.cssdesk.com/zHL6n -->
+<!-- direction.html source code: http://www.cssdesk.com/gmmUZ -->
+<!-- tour.html source code: http://www.cssdesk.com/pQqan -->
+<html lang="en">
+<head>
+    {% block head %}
+    <meta charset="UTF-8">
+    <title>{% block title %}{% endblock title %}</title>
+    <style>
+        .frozen-size-img {
+            height: 200px;
+        }
+    </style>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    {% endblock head %}
+</head>
+<body>
+
+<div class="container mt-3">
+
+    {% include "tours/menu.html" %}
+
+    <!-- HERO -->
+
+    {% block content %}
+    {% endblock content %}
+
+</div>
+
+{% include "tours/footer.html" %}
+
+</body>
+</html>
